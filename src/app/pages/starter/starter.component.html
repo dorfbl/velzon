@@ -1,0 +1,52 @@
+<!-- Start Breadcrumbs -->
+<app-breadcrumbs title="משתמשים" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<!-- End Breadcrumbs -->
+
+
+
+<div class="card-body">
+    <div class="live-preview">
+        <div class="table-responsive">
+            <table class="table align-middle table-nowrap mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">שם</th>
+                        <th scope="col">אימייל</th>
+                        <th scope="col">טלפון</th>
+                        <th scope="col">תאריך לידה</th>
+                        <th scope="col">סוג דם</th>
+                        <th scope="col">מגדר</th>
+                        <th scope="col">ארץ לידה</th>
+                        <th scope="col">ת.ז</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @for(data of allUsers; track $index){
+                    <tr>
+                        @if (data.avatar) {
+                        <td><img src="assets/images/users/{{data.avatar | lowercase }}" alt=""
+                                class="rounded-circle avatar-sm"></td>
+                        }@else{
+                        <td><img src="assets/images/users/missing.jpg" alt="" class="rounded-circle avatar-sm"></td>
+                        }
+
+                        <td>{{data.heb_name}} {{data.heb_family}}</td>
+                        <td>{{data.email}}</td>
+                        <td>{{data.phone}}</td>
+                        <td>{{data.dob | date:'dd.MM.yyyy' }}</td>
+                        <td>{{data.blood}}</td>
+                        <td>{{data.gender | gender}}</td>
+                        <td>{{data.birth_place}}</td>
+                        <td>{{data.id_nr}}</td>
+                    </tr>
+                    }@empty{
+                    <td>No entries</td>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
