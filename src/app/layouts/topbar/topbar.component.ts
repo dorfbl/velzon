@@ -53,14 +53,14 @@ export class TopbarComponent implements OnInit {
     this.element = document.documentElement;
 
     // Cookies wise Language set
-    this.cookieValue = this._cookiesService.get('lang');
-    const val = this.listLang.filter(x => x.lang === this.cookieValue);
-    this.countryName = val.map(element => element.text);
-    if (val.length === 0) {
-      if (this.flagvalue === undefined) { this.valueset = 'assets/images/flags/il.svg'; }
-    } else {
-      this.flagvalue = val.map(element => element.flag);
-    }
+    // this.cookieValue = this._cookiesService.get('lang');
+    // const val = this.listLang.filter(x => x.lang === this.cookieValue);
+    // this.countryName = val.map(element => element.text);
+    // if (val.length === 0) {
+    //   if (this.flagvalue === undefined) { this.valueset = 'assets/images/flags/il.svg'; }
+    // } else {
+    //   this.flagvalue = val.map(element => element.flag);
+    // }
 
     // Fetch Data
     this.allnotifications = allNotification;
@@ -150,17 +150,17 @@ export class TopbarComponent implements OnInit {
   /***
    * Language Listing
    */
-  listLang = [
-    { text: 'English', flag: 'assets/images/flags/us.svg', lang: 'en' },
-    { text: 'Española', flag: 'assets/images/flags/spain.svg', lang: 'es' },
-    { text: 'Deutsche', flag: 'assets/images/flags/germany.svg', lang: 'de' },
-    { text: 'עברית', flag: 'assets/images/flags/il.svg', lang: 'he' },
-    { text: 'Italiana', flag: 'assets/images/flags/italy.svg', lang: 'it' },
-    { text: 'русский', flag: 'assets/images/flags/russia.svg', lang: 'ru' },
-    { text: '中国人', flag: 'assets/images/flags/china.svg', lang: 'ch' },
-    { text: 'français', flag: 'assets/images/flags/french.svg', lang: 'fr' },
-    { text: 'Arabic', flag: 'assets/images/flags/ar.svg', lang: 'ar' },
-  ];
+  // listLang = [
+  //   { text: 'English', flag: 'assets/images/flags/us.svg', lang: 'en' },
+  //   { text: 'Española', flag: 'assets/images/flags/spain.svg', lang: 'es' },
+  //   { text: 'Deutsche', flag: 'assets/images/flags/germany.svg', lang: 'de' },
+  //   { text: 'עברית', flag: 'assets/images/flags/il.svg', lang: 'he' },
+  //   { text: 'Italiana', flag: 'assets/images/flags/italy.svg', lang: 'it' },
+  //   { text: 'русский', flag: 'assets/images/flags/russia.svg', lang: 'ru' },
+  //   { text: '中国人', flag: 'assets/images/flags/china.svg', lang: 'ch' },
+  //   { text: 'français', flag: 'assets/images/flags/french.svg', lang: 'fr' },
+  //   { text: 'Arabic', flag: 'assets/images/flags/ar.svg', lang: 'ar' },
+  // ];
 
   /***
    * Language Value Set

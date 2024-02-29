@@ -9,7 +9,7 @@
       "TEXT": "MENU"
     },
     "DASHBOARD": {
-      "TEXT": "Dashboards",
+      "TEXT": "לוח בקרה",
       "BADGE": "New",
       "LIST": {
         "ANALYTICS": "Analytics",
@@ -18,7 +18,9 @@
         "CRYPTO": "Crypto",
         "PROJECTS": "Projects",
         "NFT": "NFT",
-        "JOB": "Job"
+        "JOB": "Job",
+        "MORTGAGE": "משכנתה",
+        "PROPERTY_TAX": "ארנונה"
       }
     },
     "APPS": {
