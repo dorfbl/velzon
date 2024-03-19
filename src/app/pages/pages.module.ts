@@ -27,13 +27,14 @@ import { DashboardComponent } from './dashboards/dashboard/dashboard.component';
 import { DashboardsModule } from "./dashboards/dashboards.module";
 import { StarterComponent } from './starter/starter.component';
 import { GenderPipe } from '../core/pipes/gender.pipe';
+import { EcommerceModule } from './ecommerce/ecommerce.module';
 
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    StarterComponent,
+    StarterComponent
 
   ],
   imports: [
@@ -52,7 +53,8 @@ import { GenderPipe } from '../core/pipes/gender.pipe';
     SlickCarouselModule,
     LightboxModule,
     DashboardsModule,
-  GenderPipe
+  GenderPipe,
+  EcommerceModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

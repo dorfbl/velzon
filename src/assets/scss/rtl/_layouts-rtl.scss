@@ -126,7 +126,7 @@
             >.nav-item {
                 >.nav-link[data-bs-toggle=collapse] {
                     &:after {
-                        left: -20px;
+                        left: 0;
                         right: auto;
                     }
                 }

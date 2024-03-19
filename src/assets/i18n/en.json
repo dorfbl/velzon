@@ -23,6 +23,14 @@
         "PROPERTY_TAX": "ארנונה"
       }
     },
+    "CUSTOM": {
+      "TEXT": "אישי",
+      "BADGE": "New",
+      "LIST": {
+        "ADMINISTRATION": "ניהול",
+        "USERS": "משתמשים"
+      }
+    },
     "APPS": {
       "TEXT": "Apps",
       "LIST": {

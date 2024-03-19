@@ -9,8 +9,8 @@ export const GlobalComponent = {
   AUTH_API: "http://192.168.0.10:3000/",
 
   // Products Api
-  product: "api/product",
-  productDelete: "api/product/",
+  product: "products/",
+  productDelete: "products/",
 
   // Orders Api
   order: "api/order",

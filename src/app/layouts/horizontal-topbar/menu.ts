@@ -14,7 +14,7 @@ export const MENU: MenuItem[] = [
       {
         id: 3,
         label: 'MENUITEMS.DASHBOARD.LIST.MORTGAGE',
-        link: '/starter',
+        link: '/',
         parentId: 2
       },
       {
@@ -24,6 +24,19 @@ export const MENU: MenuItem[] = [
         parentId: 2
       },
 
+    ]
+  },
+  {
+    id: 5,
+    label: 'MENUITEMS.CUSTOM.LIST.ADMINISTRATION',
+    icon: 'las la-user-shield',
+    subItems: [
+      {
+        id: 6,
+        label: 'MENUITEMS.CUSTOM.LIST.USERS',
+        link: '/starter',
+        parentId: 5
+      }
     ]
   },
 ];

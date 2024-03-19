@@ -1,7 +1,7 @@
 // import { chatMessagesData } from "./advancedForm";
 // import { application } from "./application";
 // import { candidatelist } from "./candidateList";
-// import { cartData } from "./cart";
+ import { cartData } from "./cart";
 // import { jobcategories } from "./category";
 // import { lineAreaChart, lineBarChart, pieChart, donutChart, polarChart, radarChart } from "./chartjs";
 // import { groupData, chatData, MessagesData, contactData } from "./chat";
@@ -23,7 +23,7 @@
 // import { icons } from "./materialIcon";
 // import { Orders } from "./order";
 // import { MonthlyPlan, YearlyPlan, pricingPlan, SimplePlan } from "./pricing";
-// import { Products } from "./product";
+ import { Products } from "./product";
 // import { projectListWidgets } from "./project";
 // import { projectDocument, ProjectTeam } from "./project_overview";
 import { projectList, document } from "./projectList";
@@ -45,7 +45,7 @@ export {
     // chatMessagesData,
     // application,
     // candidatelist,
-    // cartData,
+     cartData,
     // jobcategories,
     // lineAreaChart, lineBarChart, pieChart, donutChart, polarChart, radarChart,
     // groupData, chatData, MessagesData, contactData,
@@ -74,7 +74,7 @@ export {
     // nftwalletData,
     // Orders,
     // MonthlyPlan, YearlyPlan, pricingPlan, SimplePlan,
-    // Products,
+     Products,
     // projectListWidgets,
     // projectDocument, ProjectTeam,
     projectList, document,
